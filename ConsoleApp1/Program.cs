@@ -10,17 +10,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-
-             SudokuEngine.NewGame(ref SudokuEngine.Board);
-             SudokuEngine.DrawBoard(ref SudokuEngine.Board, out SudokuEngine.s);
-
-           
+            
+            SudokuEngine.NewGame(SudokuEngine.Board);
+            SudokuEngine.DrawBoard();
+            
             Console.ReadLine();
+            
         }
-
-       
-
         
+
+
+
 
 
     }
