@@ -8,3 +8,13 @@ C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\ConsoleApp1\obj\Debug\ConsoleA
 C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
 C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\ConsoleApp1\bin\Debug\SudokuLibrary.dll
+C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\ConsoleApp1\bin\Debug\SudokuLibrary.pdb
+C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
+C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
