@@ -9,12 +9,12 @@ namespace SudokuLibrary
     public static class SudokuEngine
     {
         public static int[,] Board = new int[9, 9];
-        
+
 
         public static void NewGame(int[,] Board)
         {
             int[] b = new int[9];
-            
+
             Random rnd = new Random();
             //Losuje dowolne liczby na plansze
             for (int r = 0; r < 3; r++)
@@ -32,19 +32,19 @@ namespace SudokuLibrary
 
                 }
             }
-            
+
             //sprawdza na tablicy czy sie nie powtarzaja liczby poziom
             for (int i = 0; i < 9; i++)
             {
-                for(int j = 0; j < 9; j++)
+                for (int j = 0; j < 9; j++)
                 {
                     b[j] = Board[i, j];
                     Check(b);
                     Board[i, j] = b[j];
-                    
+
                 }
-               
-               
+
+
             }
             //to samo tylko ze pion
             for (int i = 0; i < 9; i++)
@@ -59,17 +59,18 @@ namespace SudokuLibrary
 
 
             }
-            for(int i = 0; i <=6 ; i+=3)
+            for (int i = 0; i <= 6; i += 3)
             {
-                for(int j = 0; j <= 6; j+=3)
+                for (int j = 0; j <= 6; j += 3)
                 {
                     CheckSmallSquare(i, j, Board);
                 }
             }
-           
 
 
-            
+
+
+
 
 
 
@@ -150,6 +151,7 @@ namespace SudokuLibrary
 
 
         }
+      
 
 
 

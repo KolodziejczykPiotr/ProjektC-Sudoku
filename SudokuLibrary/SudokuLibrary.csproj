@@ -44,11 +44,5 @@
     <Compile Include="SudokuEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\source\repos\Sudoku\Sudoku\Sudoku.csproj">
-      <Project>{974fb224-ff47-412e-949a-eea8d89513c3}</Project>
-      <Name>Sudoku</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

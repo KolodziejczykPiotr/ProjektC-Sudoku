@@ -28,3 +28,21 @@ C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csproj
 C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csproj.CoreCompileInputs.cache
 C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.exe
 C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.pdb
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\sudoku.exe.config
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\sudoku.exe
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\sudoku.pdb
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csprojAssemblyReference.cache
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\MainWindow.g.cs
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\App.g.cs
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku_MarkupCompile.cache
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku_MarkupCompile.lref
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\MainWindow.baml
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.g.resources
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.Properties.Resources.resources
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csproj.GenerateResource.cache
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csproj.CoreCompileInputs.cache
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.exe
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.pdb
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\SudokuLibrary.dll
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\SudokuLibrary.pdb
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csproj.CopyComplete
