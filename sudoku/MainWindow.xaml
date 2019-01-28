@@ -31,40 +31,48 @@
                 <RowDefinition Height="1*" />
             </Grid.RowDefinitions>
 
-            <Border Grid.Column="0" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
-                <TextBox Name="box1" FontSize="20" Text="a" BorderThickness="0"
+            <Border x:Name="TestBorder" Grid.Column="0" Grid.Row="0" BorderThickness="1" BorderBrush="Black" RenderTransformOrigin="0.5,0.5">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.22"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+                <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
             <Border Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
-                <TextBox Name="box2" FontSize="20" Text="b" BorderThickness="0"
+                <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="2" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
-                <TextBox Name="box3" FontSize="20" Text="c" BorderThickness="0"
+            <Border Grid.Column="2" Grid.Row="0" BorderThickness="1,1,3,1" BorderBrush="Black">
+                <TextBox Name="box3" FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
             <Border Grid.Column="3" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
-                <TextBox Name="box4" FontSize="20" Text="d" BorderThickness="0"
+                <TextBox Name="box4" FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
             <Border Grid.Column="4" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
-                <TextBox Name="box5" FontSize="20" Text="e" BorderThickness="0"
+                <TextBox Name="box5" FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="5" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
-                <TextBox Name="box6" FontSize="20" Text="f" BorderThickness="0"
+            <Border Grid.Column="5" Grid.Row="0" BorderThickness="1,1,3,1" BorderBrush="Black">
+                <TextBox Name="box6" FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
             <Border Grid.Column="6" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
-                <TextBox Name="box7" FontSize="20" Text="g" BorderThickness="0"
+                <TextBox Name="box7" FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
             <Border Grid.Column="7" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
-                <TextBox Name="box8" FontSize="20" Text="h" BorderThickness="0"
+                <TextBox Name="box8" FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
             <Border Grid.Column="8" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
-                <TextBox Name="box9" FontSize="20" Text="i" BorderThickness="0"
+                <TextBox Name="box9" FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
 
@@ -77,7 +85,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="2" Grid.Row="1" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="2" Grid.Row="1" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -89,7 +97,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="5" Grid.Row="1" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="5" Grid.Row="1" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -107,39 +115,39 @@
             </Border>
 
 
-            <Border Grid.Column="0" Grid.Row="2" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="0" Grid.Row="2" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="1" Grid.Row="2" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="1" Grid.Row="2" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="2" Grid.Row="2" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="2" Grid.Row="2" BorderThickness="1,1,3,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="3" Grid.Row="2" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="3" Grid.Row="2" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="4" Grid.Row="2" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="4" Grid.Row="2" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="5" Grid.Row="2" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="5" Grid.Row="2" BorderThickness="1,1,3,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="6" Grid.Row="2" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="6" Grid.Row="2" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="7" Grid.Row="2" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="7" Grid.Row="2" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="8" Grid.Row="2" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="8" Grid.Row="2" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -153,7 +161,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="2" Grid.Row="3" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="2" Grid.Row="3" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -165,7 +173,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="5" Grid.Row="3" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="5" Grid.Row="3" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -191,11 +199,11 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="2" Grid.Row="4" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="2" Grid.Row="4" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="3" Grid.Row="4" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="3" Grid.Row="4" BorderThickness="0,1,1,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -203,7 +211,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="5" Grid.Row="4" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="5" Grid.Row="4" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -221,39 +229,39 @@
             </Border>
 
 
-            <Border Grid.Column="0" Grid.Row="5" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="0" Grid.Row="5" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="1" Grid.Row="5" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="1" Grid.Row="5" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="2" Grid.Row="5" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="2" Grid.Row="5" BorderThickness="1,1,3,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="3" Grid.Row="5" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="3" Grid.Row="5" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="4" Grid.Row="5" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="4" Grid.Row="5" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="5" Grid.Row="5" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="5" Grid.Row="5" BorderThickness="1,1,3,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="6" Grid.Row="5" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="6" Grid.Row="5" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="7" Grid.Row="5" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="7" Grid.Row="5" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="8" Grid.Row="5" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="8" Grid.Row="5" BorderThickness="1,1,1,3" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -267,7 +275,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="2" Grid.Row="6" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="2" Grid.Row="6" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -279,7 +287,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="5" Grid.Row="6" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="5" Grid.Row="6" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -305,7 +313,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="2" Grid.Row="7" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="2" Grid.Row="7" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -317,7 +325,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="5" Grid.Row="7" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="5" Grid.Row="7" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -343,7 +351,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="2" Grid.Row="8" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="2" Grid.Row="8" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -355,7 +363,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="5" Grid.Row="8" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="5" Grid.Row="8" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
@@ -367,7 +375,7 @@
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>
-            <Border Grid.Column="8" Grid.Row="8" BorderThickness="1" BorderBrush="Black">
+            <Border Grid.Column="8" Grid.Row="8" BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Width="49">
                 <TextBox FontSize="20" BorderThickness="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
             </Border>

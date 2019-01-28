@@ -12,42 +12,80 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using SudokuLibrary;
 namespace sudoku
 {
     public partial class MainWindow : Window
     {
+        public int[,] SudokuBoard = new int[9, 9];
+        UIElement[] test = new UIElement[90];
+        Border[] borders = new Border[90];
+        TextBox[] texts = new TextBox[90];
+        public int[] Array = new int[9];
+        
         public MainWindow()
         {
             InitializeComponent();
-
-            Random rnd = new Random();
-            //Losuje dowolne liczby na plansze
-                for (int i = 0; i < 9; i++)
-                {
-                    for (int x = 0; x < 9; x++)
-                    {
-                        SudokuBoard[i, x] = rnd.Next(1, 9);
-                    }
-                }
+        
+          
         }
 
 
-        public static int[,] SudokuBoard = new int[9, 9];
+       
 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            box1.Text = SudokuBoard[0, 0].ToString();
-            box2.Text = SudokuBoard[0, 1].ToString();
-            box3.Text = SudokuBoard[0, 2].ToString();
-            box4.Text = SudokuBoard[0, 3].ToString();
-            box5.Text = SudokuBoard[0, 4].ToString();
-            box6.Text = SudokuBoard[0, 5].ToString();
-            box7.Text = SudokuBoard[0, 6].ToString();
-            box8.Text = SudokuBoard[0, 7].ToString();
-            box9.Text = SudokuBoard[0, 8].ToString();
-            
+            SudokuGrid.Children.CopyTo(test, 0);
+
+            SudokuEngine.NewGame(SudokuBoard);
+
+            for (int i = 0; i < borders.Length; i++)
+            {
+                borders[i] = test[i] as Border;
+
+
+            }
+
+
+            for (int i = 0; i < borders.Length; i++)
+            {
+                if (borders[i] != null)
+                {
+                    texts[i] = borders[i].Child as TextBox;
+                }
+            }
+            int z = 0;
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    if (z > 80)
+                    {
+                        break;
+                    }
+                    
+                    texts[z].Text = SudokuBoard[i, j].ToString();
+                    if (texts[z].Text == "0")
+                    {
+                        texts[z].Text = "";
+                    }
+                        z++;
+                }
+
+
+
+            }
+
+           
+
+
         }
+
+        
+
+      
+
+       
     }
 }
