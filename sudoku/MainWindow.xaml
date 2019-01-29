@@ -9,15 +9,15 @@
     <Border Height="450" Width="450" BorderThickness="1" BorderBrush="Black">
         <Grid Name="SudokuGrid">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="50*" />
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*" />
+                <ColumnDefinition Width="50*" />
+                <ColumnDefinition Width="49*" />
+                <ColumnDefinition Width="51*" />
+                <ColumnDefinition Width="49*" />
+                <ColumnDefinition Width="50*" />
+                <ColumnDefinition Width="49*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*" />
@@ -40,12 +40,12 @@
                         <TranslateTransform/>
                     </TransformGroup>
                 </Border.RenderTransform>
-                <TextBox FontSize="20" BorderThickness="0"
-                   HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <TextBox x:Name="_0_0" FontSize="20" BorderThickness="0"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Background="{x:Null}" AutomationProperties.Name="0,0" />
             </Border>
             <Border Grid.Column="1" Grid.Row="0" BorderThickness="1" BorderBrush="Black">
-                <TextBox FontSize="20" BorderThickness="0"
-                   HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                <TextBox x:Name="_0_1" FontSize="20" BorderThickness="0"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" AutomationProperties.Name="0,1" />
             </Border>
             <Border Grid.Column="2" Grid.Row="0" BorderThickness="1,1,3,1" BorderBrush="Black">
                 <TextBox Name="box3" FontSize="20" BorderThickness="0"
@@ -386,6 +386,8 @@
                    Grid.ColumnSpan="5" Width="200" Height="50" HorizontalContentAlignment="Center"/>
             <Button Grid.ColumnSpan="6" Content="Generate Numbers" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" 
                     Width="250" RenderTransformOrigin="2.893,25.9" Height="59" Margin="0,97,0,-107" Grid.Row="8" Click="Button_Click" Grid.Column="2"/>
+            <TextBox x:Name="l" Grid.ColumnSpan="2" Grid.Column="7" HorizontalAlignment="Left" Height="23" Margin="25,-72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="65"/>
+            <TextBox x:Name="testowyBox" Grid.ColumnSpan="3" Grid.Column="6" HorizontalAlignment="Left" Height="23" Margin="18,-38,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
 
 
