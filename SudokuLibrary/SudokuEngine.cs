@@ -11,9 +11,9 @@ namespace SudokuLibrary
         public static int[,] Board = new int[9, 9];
 
 
-        public static void NewGame(int[,] Board)
+        public static void NewGame(int[,] Board,int[] b)
         {
-            int[] b = new int[9];
+            b = new int[9];
 
             Random rnd = new Random();
             //Losuje dowolne liczby na plansze
@@ -77,56 +77,56 @@ namespace SudokuLibrary
 
 
         }
-         //Rysuje Plansze       
+        //Rysuje Plansze       
         public static void DrawBoard()
         {
-            
-            for(int x = 0; x < 9; x++)
+
+            for (int x = 0; x < 9; x++)
             {
-                for(int y = 0; y < 9; y++)
+                for (int y = 0; y < 9; y++)
                 {
-                    Console.Write(Board[x, y]+" ");
+                    Console.Write(Board[x, y] + " ");
                 }
                 Console.WriteLine();
             }
-         
-            
-            
-            
-           
+
+
+
+
+
         }
         //metoda ktora sprawdza male kwadraty 
-        public static void CheckSmallSquare(int i,int j,int[,] Board)
+        public static void CheckSmallSquare(int i, int j, int[,] Board)
         {
             int[] array = new int[9];
             int number = 0;
-            for (int r =i; r <i+3; r++)
+            for (int r = i; r < i + 3; r++)
             {
-                for(int l = j; l<j+3; l++)
+                for (int l = j; l < j + 3; l++)
                 {
-                       array[number] = Board[r, l];
-                       number++;
-                    
+                    array[number] = Board[r, l];
+                    number++;
+
                 }
-               
+
             }
             Check(array);
             number = 0;
-            for(int r = i; r < i + 3; r++)
+            for (int r = i; r < i + 3; r++)
             {
-                for(int l = j; l < j + 3; l++)
+                for (int l = j; l < j + 3; l++)
                 {
                     Board[r, l] = array[number];
                     number++;
                 }
-               
-            }
-            
-            
-            
 
-            
-            
+            }
+
+
+
+
+
+
         }
         //Obsluguje sprawdzanie w pionie i poziomie
         public static void Check(int[] b)
@@ -146,18 +146,45 @@ namespace SudokuLibrary
 
                     }
                 }
-               
+
             }
 
 
         }
+
+        public static bool CheckAfterChangeNumbers(int[] b)
+        {
+
+
+
+            for (int i = 0; i < b.Length; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+
+                    if (b[i] == b[j] && i != j&&b[i]!=0)
+                    {
+
+                        return true;
+
+                    }
+                }
+
+            }
+
+            return false;
+        }
+
       
-
-
-
-
-
-
-
     }
-}
+}        
+            
+       
+
+    
+
+
+
+
+    
+
