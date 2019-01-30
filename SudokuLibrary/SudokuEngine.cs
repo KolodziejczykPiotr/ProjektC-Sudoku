@@ -174,8 +174,22 @@ namespace SudokuLibrary
 
             return false;
         }
+        public static void CheckSmallSquareAfterChangeNumbers(int i, int j, int[] array,int[,] Board)
+        {
+            array = new int[9];
+            int number = 0;
+            for (int r = i; r < i + 3; r++)
+            {
+                for (int l = j; l < j + 3; l++)
+                {
+                    array[number] = Board[r, l];
+                    number++;
 
-      
+                }
+
+            }
+        }
+
     }
 }        
             
