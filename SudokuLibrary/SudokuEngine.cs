@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace SudokuLibrary
 {
@@ -174,21 +175,41 @@ namespace SudokuLibrary
 
             return false;
         }
-        public static void CheckSmallSquareAfterChangeNumbers(int i, int j, int[] array,int[,] Board)
+        public static bool EndGame(int[,] Board)
         {
-            array = new int[9];
-            int number = 0;
-            for (int r = i; r < i + 3; r++)
+            int[] array = new int[9];
+           for(int i = 0; i < 9; i++)
             {
-                for (int l = j; l < j + 3; l++)
+                for(int j =0; j < 9; j++)
                 {
-                    array[number] = Board[r, l];
-                    number++;
+                    array[j] = Board[i, j];
+                    
+                }
+                if (CheckAfterChangeNumbers(array))
+                {
+                    return false;
+                }
+            }
+           
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    array[j] = Board[j, i];
+                    
+                }
+                if (CheckAfterChangeNumbers(array))
+                {
+                    return false;
 
                 }
-
             }
+            
+    
+
+            return true;
         }
+
 
     }
 }        

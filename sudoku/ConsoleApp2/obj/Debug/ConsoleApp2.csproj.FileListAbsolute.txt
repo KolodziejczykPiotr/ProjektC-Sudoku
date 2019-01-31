@@ -1,0 +1,10 @@
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\ConsoleApp2\bin\Debug\SudokuLibrary.dll
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\ConsoleApp2\bin\Debug\SudokuLibrary.pdb
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\ConsoleApp2\obj\Debug\ConsoleApp2.csprojAssemblyReference.cache
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CopyComplete
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
