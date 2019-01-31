@@ -387,7 +387,9 @@
             <Button Grid.ColumnSpan="6" Content="Generate Numbers" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" 
                     Width="250" RenderTransformOrigin="2.893,25.9" Height="59" Margin="0,97,0,-107" Grid.Row="8" Click="Button_Click" Grid.Column="2"/>
             <TextBox x:Name="l" Grid.ColumnSpan="2" Grid.Column="7" HorizontalAlignment="Left" Height="23" Margin="25,-72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="65"/>
-            <TextBox x:Name="testowyBox" Grid.ColumnSpan="3" Grid.Column="6" HorizontalAlignment="Left" Height="23" Margin="18,-38,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="testowyBox" Grid.ColumnSpan="3" Grid.Column="6" HorizontalAlignment="Left" Height="99" Margin="18,-113,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+            <Label x:Name="EndGameLabel" Content="YOU WIN!!" Margin="18,41,30,0" VerticalAlignment="Top" Grid.ColumnSpan="9" Height="159" Grid.RowSpan="4" FontSize="72" FontWeight="Bold" FontStyle="Italic" Background="Red" Visibility="Hidden"/>
+            <Button Content="Button" Grid.Column="7" HorizontalAlignment="Left" Height="100" Margin="25,83,0,-133" Grid.Row="8" VerticalAlignment="Top" Width="64" Grid.ColumnSpan="2" Click="Button_Click_1"/>
 
 
 
