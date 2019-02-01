@@ -175,40 +175,7 @@ namespace SudokuLibrary
 
             return false;
         }
-        public static bool EndGame(int[,] Board)
-        {
-            int[] array = new int[9];
-           for(int i = 0; i < 9; i++)
-            {
-                for(int j =0; j < 9; j++)
-                {
-                    array[j] = Board[i, j];
-                    
-                }
-                if (CheckAfterChangeNumbers(array))
-                {
-                    return false;
-                }
-            }
-           
-            for (int i = 0; i < 9; i++)
-            {
-                for (int j = 0; j < 9; j++)
-                {
-                    array[j] = Board[j, i];
-                    
-                }
-                if (CheckAfterChangeNumbers(array))
-                {
-                    return false;
-
-                }
-            }
-            
-    
-
-            return true;
-        }
+       
 
 
     }
