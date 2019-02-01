@@ -20,7 +20,7 @@ namespace ConsoleApp2
                 { 3,8,9,2,4,6,5,7,1},
                 { 2,5,4,7,1,3,8,6,9},
                 { 7,3,1,8,6,2,9,5,4} };
-            Console.WriteLine(SudokuLibrary.SudokuEngine.EndGame(dupa));
+           
             Console.ReadLine();
 
         }

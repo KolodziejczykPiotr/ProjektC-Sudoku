@@ -23,6 +23,7 @@ namespace sudoku
         TextBox[,] texts = new TextBox[9, 9];
         int[] Array = new int[9];
         bool flag = false;
+        bool endGame;
         public MainWindow()
         {
             InitializeComponent();
@@ -121,9 +122,9 @@ namespace sudoku
             // Sprawdza Maly kwadrat
             if (!flag)
             {
-                CheckSmallSquare(NameArray);
+               CheckSmallSquare(NameArray);
             }
-            flag = SudokuEngine.CheckAfterChangeNumbers(Array);
+             flag = SudokuEngine.CheckAfterChangeNumbers(Array);
 
             //Sprawdza w pionie
             if (!flag)
@@ -153,10 +154,22 @@ namespace sudoku
                         SudokuBoard[i, j] = 0;
                 }
             }
-            
-
-            if (SudokuEngine.EndGame(SudokuBoard))
+            for (int i = 0; i < 9; i++)
             {
+                for(int j = 0; j < 9; j++)
+                {
+                    if(texts[i,j].Background==Brushes.Red || texts[i, j].Text == "")
+                    {
+                        endGame = true;
+                        break;
+                    }
+                    else
+                    { endGame = false; }
+                }
+            }
+
+            if (!endGame)
+            { 
                 EndGameLabel.Visibility = Visibility.Visible;
             }
 
