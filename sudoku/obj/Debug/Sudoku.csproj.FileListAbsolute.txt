@@ -46,3 +46,7 @@ C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.pdb
 C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\SudokuLibrary.dll
 C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\SudokuLibrary.pdb
 C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csproj.CopyComplete
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\TimeAndTimePeriod.dll
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\TimeAndTimePeriod.pdb
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\TimeAndTimePeriod.xml
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\sudoku\bin\Debug\TimeAndTimePeriod.dll.config

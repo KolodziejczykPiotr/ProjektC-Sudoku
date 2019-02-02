@@ -95,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\TimeAndTimePeriod1\TimeAndTimePeriod\TimeAndTimePeriod\TimeAndTimePeriod.csproj">
+      <Project>{9a43ea42-50ad-477b-9bbe-4fdc8843ce19}</Project>
+      <Name>TimeAndTimePeriod</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SudokuLibrary\SudokuLibrary.csproj">
       <Project>{fb0157e8-1f36-4d41-801a-1a7bb0f893d9}</Project>
       <Name>SudokuLibrary</Name>
