@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TimeAndTimePeriod</name>
+    </assembly>
+    <members>
+        <member name="T:TimeAndTimePeriod.Time">
+            <summary>
+            Struktura Time jest reprezentacja czasu w formacie hh:mm:ss
+            </summary>
+        </member>
+        <member name="P:TimeAndTimePeriod.Time.Seconds">
+            <summary>
+            Zwraca sekundy upraszczajac modulo 60
+            </summary>
+        </member>
+        <member name="P:TimeAndTimePeriod.Time.Minutes">
+            <summary>
+            Zwraca minuty upraszczajac modulo 60
+            </summary>
+        </member>
+        <member name="P:TimeAndTimePeriod.Time.Hours">
+            <summary>
+            Zwraca godziny upraszczajac modulo 24
+            </summary>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.#ctor(System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="_hours"></param>
+            <param name="_minutes"></param>
+            <param name="_seconds"></param>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.#ctor(System.Byte,System.Byte)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="_hours"></param>
+            <param name="_minutes"></param>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.#ctor(System.Byte)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="_hours"></param>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.#ctor(System.String)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.ToString">
+            <summary>
+            Przesloniecie metody ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.Equals(TimeAndTimePeriod.Time)">
+            <summary>
+            Implementacja IEquatable 
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.CompareTo(TimeAndTimePeriod.Time)">
+            <summary>
+            Implementacje Comparable
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.op_Equality(TimeAndTimePeriod.Time,TimeAndTimePeriod.Time)">
+            <summary>
+            Przesloniecie operatora "=="
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.op_Inequality(TimeAndTimePeriod.Time,TimeAndTimePeriod.Time)">
+            <summary>
+            Przesloniecie operator "!="
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.Equals(System.Object)">
+            <summary>
+            Przesloniecie metody Equals
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.GetHashCode">
+            <summary>
+            Przesloniecie GetHashCode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.op_LessThan(TimeAndTimePeriod.Time,TimeAndTimePeriod.Time)">
+            <summary>
+            Przesloniecie operatora mniejszosci
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.op_GreaterThan(TimeAndTimePeriod.Time,TimeAndTimePeriod.Time)">
+            <summary>
+            Przesloniecie operatora wiekszosci
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.op_GreaterThanOrEqual(TimeAndTimePeriod.Time,TimeAndTimePeriod.Time)">
+            <summary>
+            Przesloniecie operatora wiekszosci badz rownosci
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.op_LessThanOrEqual(TimeAndTimePeriod.Time,TimeAndTimePeriod.Time)">
+            <summary>
+            Przesloniecie operatora mniejszosci badz rownosci
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.op_Addition(TimeAndTimePeriod.Time,TimeAndTimePeriod.Time)">
+            <summary>
+            Przesloniecie operatora +
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.op_Subtraction(TimeAndTimePeriod.Time,TimeAndTimePeriod.Time)">
+            <summary>
+            Przesloniecie operatora -
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.Plus(TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Metoda dodajaca Time do TimePeriod
+            </summary>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.Plus(TimeAndTimePeriod.Time,TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Metoda statyczna dodajaca Time do TimePeriod
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.Time.Start">
+            <summary>
+            Metoda uruchamiajaca zegar
+            </summary>
+        </member>
+        <member name="T:TimeAndTimePeriod.TimePeriod">
+            <summary>
+            Struktura reprezentujaca uplywajacy czas w formacie hhh:mm:ss
+            </summary>
+        </member>
+        <member name="P:TimeAndTimePeriod.TimePeriod.Seconds">
+            <summary>
+            Wlasciowosc zwraca sekundy upraszczajac modulo 60
+            </summary>
+        </member>
+        <member name="P:TimeAndTimePeriod.TimePeriod.Minutes">
+            <summary>
+            Wlasciwosc zwraca minuty upraszczajac modulo 60
+            </summary>
+        </member>
+        <member name="P:TimeAndTimePeriod.TimePeriod.Hours">
+            <summary>
+            Wlasciwosc zwraca godziny upraszczajac modulo 24
+            </summary>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.#ctor(System.Int64,System.Int64,System.Int64)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="_hours"></param>
+            <param name="_minutes"></param>
+            <param name="_seconds"></param>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.#ctor(System.Int64,System.Int64)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="_hours"></param>
+            <param name="_minutes"></param>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.#ctor(System.Int64)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="_seconds"></param>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.#ctor(System.String)">
+            <summary>
+            Konstruktor
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.#ctor(TimeAndTimePeriod.Time,TimeAndTimePeriod.Time)">
+            <summary>
+            Konstruktor zwracajacy roznice w czasie
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.ToString">
+            <summary>
+            Przysloniecie metody ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.Equals(TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Implementacja IEquatable
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.CompareTo(TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Implementacja Comparable
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.op_Equality(TimeAndTimePeriod.TimePeriod,TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Przesloniecie operatora ==
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.op_Inequality(TimeAndTimePeriod.TimePeriod,TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Przesloniecie operatora !=
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.Equals(System.Object)">
+            <summary>
+            Przesloniecie metody Equals
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.GetHashCode">
+            <summary>
+            Przesloniecie metody GetHashCode
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.op_LessThan(TimeAndTimePeriod.TimePeriod,TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Przesloniecie operatora mniejszosci
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.op_GreaterThan(TimeAndTimePeriod.TimePeriod,TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            przesloniecie operatora wiekszosci
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.op_GreaterThanOrEqual(TimeAndTimePeriod.TimePeriod,TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            przesloniecie operatora wiekszosci badz rownosci
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.op_LessThanOrEqual(TimeAndTimePeriod.TimePeriod,TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            przesloniecie operatora mniejszosci badz rownosci
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.op_Addition(TimeAndTimePeriod.TimePeriod,TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Przesloniecie operatora +
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.op_Subtraction(TimeAndTimePeriod.TimePeriod,TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Przesloniecie operatora -
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.Plus(TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Metoda dodajaca TimePeriod do TimePeriod
+            </summary>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.Plus(TimeAndTimePeriod.TimePeriod,TimeAndTimePeriod.TimePeriod)">
+            <summary>
+            Statyczna metoda dodajaca TimePeriod do TimePeriod
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TimeAndTimePeriod.TimePeriod.Start">
+            <summary>
+            Metoda uruchamiajaca stoper
+            </summary>
+        </member>
+    </members>
+</doc>
