@@ -388,8 +388,8 @@
                     Width="250" RenderTransformOrigin="2.893,25.9" Height="59" Margin="0,97,0,-107" Grid.Row="8" Click="Button_Click" Grid.Column="2"/>
             <TextBox x:Name="l" Grid.ColumnSpan="2" Grid.Column="7" HorizontalAlignment="Left" Height="23" Margin="25,-72,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="65" Visibility="Hidden"/>
             <Label x:Name="EndGameLabel" Content="YOU WIN!!" Margin="18,41,23,0" VerticalAlignment="Top" Grid.ColumnSpan="9" Height="109" Grid.RowSpan="3" FontSize="72" FontWeight="Bold" FontStyle="Italic" Background="Red" Visibility="Hidden"/>
-            <Label x:Name="TimerLabel" Content="" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="225" Grid.ColumnSpan="5" Height="45" FontSize="24" Background="#FFE60E0E" Grid.Column="4" Visibility="Hidden"/>
-            <Label Content="  Your Time is :" HorizontalAlignment="Left" Margin="18,0,0,0" Grid.Row="3" VerticalAlignment="Top" Width="182" Grid.ColumnSpan="4" Height="45" Background="#FFEE0505" FontSize="24" Visibility="Hidden"/>
+            <Label x:Name="TimerLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Grid.ColumnSpan="5" Height="46" FontSize="24" Background="Red" Grid.Column="4" Margin="0,-61,0,0"/>
+            <Label Content="  Your Time is :" HorizontalAlignment="Left" Margin="18,-61,0,0" VerticalAlignment="Top" Width="182" Grid.ColumnSpan="4" Height="46" Background="Red" FontSize="24"/>
 
 
 
