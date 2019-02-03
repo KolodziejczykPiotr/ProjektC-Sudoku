@@ -18,7 +18,7 @@ namespace SudokuLibrary
 
             Random rnd = new Random();
             //Losuje dowolne liczby na plansze
-            for (int r = 0; r < 3; r++)
+            for (int r = 0; r < 6; r++)
             {
                 for (int i = 0; i < 9; i++)
                 {

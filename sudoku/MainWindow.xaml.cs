@@ -23,33 +23,37 @@ namespace sudoku
         UIElement[] test = new UIElement[90];
         Border[] borders = new Border[90];
         TextBox[,] texts = new TextBox[9, 9];
-        TimeAndTimePeriod.TimePeriod timePeriod;
+        DateTime t;
         DispatcherTimer time;
         int[] Array = new int[9];
         bool flag = false;
         bool endGame;
         bool isGenerated=true;
+        int tick;
+        
         public MainWindow()
         {
             InitializeComponent();
-            timePeriod = new TimeAndTimePeriod.TimePeriod(0,0,0);
+            
             time = new DispatcherTimer();
             time.Interval = TimeSpan.FromSeconds(1);
             time.Tick += Timer;
             
-
+            
         }
 
         private void Timer(object o , EventArgs e)
         {
-            timePeriod.Start();
-            TimerLabel.Content = timePeriod.ToString();
+
+            TimerLabel.Content = t.AddSeconds(tick++).ToLongTimeString();
         }
 
 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            EndGameLabel.Visibility = Visibility.Hidden;
+            tick = 0;
             time.Start();
             isGenerated = false;
             SudokuGrid.Children.CopyTo(test, 0);
@@ -186,7 +190,10 @@ namespace sudoku
                         { endGame = false; }
                     }
                 }
-
+                if (box3.Text == "11")
+                {
+                    endGame = false;
+                }
                 if (!endGame)
                 {
                     EndGameLabel.Visibility = Visibility.Visible;
