@@ -14,3 +14,9 @@ C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\SudokuLibrary\obj\Debug\Sudoku
 C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.csproj.CopyComplete
 C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.dll
 C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.pdb
+C:\Users\Bartek\Desktop\projectSudoku\ProjektC-Sudoku\SudokuLibrary\bin\Debug\SudokuLibrary.dll
+C:\Users\Bartek\Desktop\projectSudoku\ProjektC-Sudoku\SudokuLibrary\bin\Debug\SudokuLibrary.pdb
+C:\Users\Bartek\Desktop\projectSudoku\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.csprojAssemblyReference.cache
+C:\Users\Bartek\Desktop\projectSudoku\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\Desktop\projectSudoku\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.dll
+C:\Users\Bartek\Desktop\projectSudoku\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.pdb

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
@@ -47,8 +48,6 @@ namespace sudoku
 
             TimerLabel.Content = t.AddSeconds(tick++).ToLongTimeString();
         }
-
-
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -301,7 +300,7 @@ namespace sudoku
             }
         }
 
-      
+        
     }
 }
 
