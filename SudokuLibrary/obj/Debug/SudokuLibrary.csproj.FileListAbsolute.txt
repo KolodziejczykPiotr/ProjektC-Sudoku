@@ -14,3 +14,4 @@ C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\SudokuLibrary\obj\Debug\Sudoku
 C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.csproj.CopyComplete
 C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.dll
 C:\Users\Bartek\Desktop\projektC#\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.pdb
+C:\Users\Piotr\Desktop\Projekt C#\ProjektC-Sudoku\SudokuLibrary\bin\Debug\SudokuLibrary.xml

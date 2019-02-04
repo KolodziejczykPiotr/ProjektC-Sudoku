@@ -390,6 +390,18 @@
             <Label x:Name="EndGameLabel" Content="YOU WIN!!" Margin="18,41,23,0" VerticalAlignment="Top" Grid.ColumnSpan="9" Height="109" Grid.RowSpan="3" FontSize="72" FontWeight="Bold" FontStyle="Italic" Background="Red" Visibility="Hidden"/>
             <Label x:Name="TimerLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Grid.ColumnSpan="5" Height="46" FontSize="24" Background="Red" Grid.Column="4" Margin="0,-61,0,0"/>
             <Label Content="  Your Time is :" HorizontalAlignment="Left" Margin="18,-61,0,0" VerticalAlignment="Top" Width="182" Grid.ColumnSpan="4" Height="46" Background="Red" FontSize="24"/>
+            <Menu x:Name="ErrorWindow" HorizontalAlignment="Left" Height="100" Margin="41,0,0,0" Grid.Row="2" Grid.RowSpan="2" VerticalAlignment="Top" Width="363" Grid.ColumnSpan="9" RenderTransformOrigin="0.5,0.5" Background="#FF8D4848" Visibility="Hidden">
+                <Menu.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.107"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.498"/>
+                    </TransformGroup>
+                </Menu.RenderTransform>
+                <Button Content="OK!" Width="80" Height="100" RenderTransformOrigin="0.493,0.503" Click="Button_Click_1"/>
+                <Label Content="Bad format , write numbers 1-9!" Width="253" Height="39" FontSize="16"/>
+            </Menu>
 
 
 
