@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,52 +20,59 @@ namespace sudoku
     public partial class MainWindow : Window
     {
         int[,] SudokuBoard = new int[9, 9];
-        UIElement[] test = new UIElement[90];
+        UIElement[] UIs = new UIElement[90];
         Border[] borders = new Border[90];
         TextBox[,] texts = new TextBox[9, 9];
-        DateTime t;
-        DispatcherTimer time;
+        DateTime time;
+        DispatcherTimer timer;
         int[] Array = new int[9];
         bool flag = false;
         bool endGame;
-        bool isGenerated=true;
+        bool isGenerated = true;
         int tick;
-        
+
         public MainWindow()
         {
             InitializeComponent();
-            
-            time = new DispatcherTimer();
-            time.Interval = TimeSpan.FromSeconds(1);
-            time.Tick += Timer;
-            
-            
+
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += Timer;
+
+
         }
 
-        private void Timer(object o , EventArgs e)
+        private void Timer(object o, EventArgs e)
         {
-
-            TimerLabel.Content = t.AddSeconds(tick++).ToLongTimeString();
+            TimerLabel.Content = time.AddSeconds(tick++).ToLongTimeString();
         }
+
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //Ukrywa label z informacja końca gry
             EndGameLabel.Visibility = Visibility.Hidden;
+            //Zeruje zegar
             tick = 0;
-            time.Start();
+            //Startuje zegar
+            timer.Start();
+
             isGenerated = false;
-            SudokuGrid.Children.CopyTo(test, 0);
-
+            //Kopiuje wszystkie dzieci glownego Grida
+            SudokuGrid.Children.CopyTo(UIs, 0);
+            //Uruchamia losowanie
             SudokuEngine.NewGame(SudokuBoard, Array);
-
+            //Przypisuje wszystkie bordery do tablicy borderów
             for (int i = 0; i < borders.Length; i++)
             {
-                borders[i] = test[i] as Border;
+                borders[i] = UIs[i] as Border;
 
 
             }
 
             int z = 0;
+            //szuka z wszystkich borderów textboxy
             for (int i = 0; i < 9; i++)
             {
                 for (int j = 0; j < 9; j++)
@@ -104,7 +110,7 @@ namespace sudoku
             }
 
 
-
+            //Zdarzenie ktore ma sie wykonac po zmianie w TextBox
             foreach (var i in texts)
             {
                 if (i != null)
@@ -121,16 +127,17 @@ namespace sudoku
             isGenerated = true;
         }
 
-
+        //Metoda ktora sie wykonuje gdy zajdzie zdarzenie
         public void CheckAfter(object o, RoutedEventArgs e)
         {
-            
+
+
             if (isGenerated)
             {
                 flag = false;
-
+                //pobiera informacje w ktorym textbox zostala zmieniona liczba
                 l = (TextBox)e.OriginalSource;
-
+                //pobiera nazwe textboxa gdzie byla zmieniona liczba
                 string[] NameArray = new string[2];
 
                 NameArray = l.Name.Split('_');
@@ -138,169 +145,93 @@ namespace sudoku
                 if (texts[Convert.ToInt32(NameArray[1]), Convert.ToInt32(NameArray[2])] != null)
                     texts[Convert.ToInt32(NameArray[1]), Convert.ToInt32(NameArray[2])].Text = l.Text;
 
-
-                texts[Convert.ToInt32(NameArray[1]), Convert.ToInt32(NameArray[2])].Background = Brushes.White;
-
-                // Sprawdza Maly kwadrat
-                if (!flag)
+                //sprawdza czy jest poprawny format
+                if (l.Text != "1" && l.Text != "2" && l.Text != "3" && l.Text != "4" && l.Text != "5" && l.Text != "6" && l.Text != "7" && l.Text != "8" && l.Text != "9" && l.Text != "")
                 {
-                    CheckSmallSquare(NameArray);
+                    ErrorWindow.Visibility = Visibility.Visible;
+                    l.Text = "";
+
                 }
-                flag = SudokuEngine.CheckAfterChangeNumbers(Array);
-
-                //Sprawdza w pionie
-                if (!flag)
-                    CheckVertical(NameArray);
-
-                flag = SudokuEngine.CheckAfterChangeNumbers(Array);
-                //Sprawdza w poziomie
-                if (!flag)
+                else
                 {
-                    CheckHorizontal(NameArray);
-                }
+                    //zmienia kolor tła na biały
+                    texts[Convert.ToInt32(NameArray[1]), Convert.ToInt32(NameArray[2])].Background = Brushes.White;
 
-                flag = SudokuEngine.CheckAfterChangeNumbers(Array);
-
-                if (flag)
-                {
-                    texts[Convert.ToInt32(NameArray[1]), Convert.ToInt32(NameArray[2])].Background = Brushes.Red;
-                }
-
-                for (int i = 0; i < 9; i++)
-                {
-                    for (int j = 0; j < 9; j++)
+                    // Sprawdza Maly kwadrat
+                    if (!flag)
                     {
-                        if (texts[i, j].Text != "")
-                            SudokuBoard[i, j] = Convert.ToInt32(texts[i, j].Text);
-                        else
-                            SudokuBoard[i, j] = 0;
+                        SudokuEngine.CheckSmallSquare(NameArray, texts, Array);
                     }
-                }
-                for (int i = 0; i < 9; i++)
-                {
-                    for (int j = 0; j < 9; j++)
+                    flag = SudokuEngine.CheckAfterChangeNumbers(Array);
+
+                    //Sprawdza w pionie
+                    if (!flag)
+                        SudokuEngine.CheckVertical(NameArray, texts, Array);
+
+                    flag = SudokuEngine.CheckAfterChangeNumbers(Array);
+                    //Sprawdza w poziomie
+                    if (!flag)
                     {
-                        if (texts[i, j].Background == Brushes.Red || texts[i, j].Text == "")
+                        SudokuEngine.CheckHorizontal(NameArray, texts, Array);
+                    }
+
+                    flag = SudokuEngine.CheckAfterChangeNumbers(Array);
+
+                    //Zmienia kolor tła jeżeli liczba się powtarza
+                    if (flag)
+                    {
+                        texts[Convert.ToInt32(NameArray[1]), Convert.ToInt32(NameArray[2])].Background = Brushes.Red;
+                    }
+
+                    //Przypisuje do Boarda wszystkie textBoxy
+                    for (int i = 0; i < 9; i++)
+                    {
+                        for (int j = 0; j < 9; j++)
                         {
-                            endGame = true;
-                            break;
+                            if (texts[i, j].Text != "")
+                                SudokuBoard[i, j] = Convert.ToInt32(texts[i, j].Text);
+                            else
+                                SudokuBoard[i, j] = 0;
                         }
-                        else
-                        { endGame = false; }
                     }
-                }
-                if (box3.Text == "11")
-                {
-                    endGame = false;
-                }
-                if (!endGame)
-                {
-                    EndGameLabel.Visibility = Visibility.Visible;
-                    time.Stop();
-                }
-            }
-
-        }
-
-        private void CheckHorizontal(string[] NameArray)
-        {
-            for (int i = 0; i < 9; i++)
-            {
-                if (texts[i, Convert.ToInt32(NameArray[2])].Text != "")
-                    Array[i] = Convert.ToInt32(texts[i, Convert.ToInt32(NameArray[2])].Text);
-                if (texts[i, Convert.ToInt32(NameArray[2])].Text == "")
-                {
-                    Array[i] = 0;
-                }
-
-
-
-            }
-        }
-
-        private void CheckVertical(string[] NameArray)
-        {
-            for (int i = 0; i < 9; i++)
-            {
-                if (texts[Convert.ToInt32(NameArray[1]), i].Text != "")
-                    Array[i] = Convert.ToInt32(texts[Convert.ToInt32(NameArray[1]), i].Text);
-                if (texts[Convert.ToInt32(NameArray[1]), i].Text == "")
-                {
-                    Array[i] = 0;
-                }
-
-
-
-            }
-        }
-
-        private void CheckSmallSquare(string[] NameArray)
-        {
-            int first = 0;
-            int second = 0;
-            switch (Convert.ToInt32(NameArray[1]))
-            {
-                case 0:
-                case 1:
-                case 2:
-                    first = 0;
-                    break;
-                case 3:
-                case 4:
-                case 5:
-                    first = 3;
-                    break;
-                case 6:
-                case 7:
-                case 8:
-                    first = 6;
-                    break;
-
-
-
-            }
-
-            switch (Convert.ToInt32(NameArray[2]))
-            {
-                case 0:
-                case 1:
-                case 2:
-                    second = 0;
-                    break;
-                case 3:
-                case 4:
-                case 5:
-                    second = 3;
-                    break;
-                case 6:
-                case 7:
-                case 8:
-                    second = 6;
-                    break;
-            }
-
-            int number = 0;
-            for (int r = first; r < first + 3; r++)
-            {
-                for (int l = second; l < second + 3; l++)
-                {
-                    if (texts[r, l].Text != "")
+                    //Sprawdza czy koniec gry poprzez sprawdzenie czy żadna liczba sie nie powtarza ,
+                    //w swoim obrębie i czy nie ma pusych pól
+                    for (int i = 0; i < 9; i++)
                     {
-                        Array[number] = Convert.ToInt32(texts[r, l].Text);
+                        for (int j = 0; j < 9; j++)
+                        {
+                            if (texts[i, j].Background == Brushes.Red || texts[i, j].Text == "")
+                            {
+                                endGame = true;
+                                break;
+                            }
+                            else
+                            { endGame = false; }
+                        }
                     }
-                    if (texts[r, l].Text == "")
+                    //Kończy Gre wyswietlajac YouWin i zatrzymuje czas 
+                    if (!endGame)
                     {
-                        Array[number] = 0;
+                        EndGameLabel.Visibility = Visibility.Visible;
+                        timer.Stop();
                     }
-
-                    number++;
-
                 }
-
             }
         }
-
-        
+        //Wyswietla label z błędem gdy zły format
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ErrorWindow.Visibility = Visibility.Hidden;
+        }
     }
+
+
+
+
+
+
+
+
 }
+
 

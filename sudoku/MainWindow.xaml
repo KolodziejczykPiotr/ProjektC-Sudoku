@@ -316,6 +316,10 @@
             <Label x:Name="EndGameLabel" Content="YOU WIN!!" Margin="18,41,23,0" VerticalAlignment="Top" Grid.ColumnSpan="9" Height="109" Grid.RowSpan="3" FontSize="72" FontWeight="Bold" FontStyle="Italic" Background="Red" Visibility="Hidden"/>
             <Label x:Name="TimerLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Grid.ColumnSpan="5" Height="46" FontSize="24" Background="Red" Grid.Column="4" Margin="0,-61,0,0"/>
             <Label Content="  Your Time is :" HorizontalAlignment="Left" Margin="18,-61,0,0" VerticalAlignment="Top" Width="182" Grid.ColumnSpan="4" Height="46" Background="Red" FontSize="24"/>
+            <Menu x:Name="ErrorWindow" HorizontalAlignment="Left" Height="100" Grid.Row="2" Grid.RowSpan="2" VerticalAlignment="Top" Width="448" Grid.ColumnSpan="9" Background="#FFA47C7C" Visibility="Hidden">
+                <Button Content="OK!" Width="73" Height="100" Click="Button_Click_2"/>
+                <Label Content="Wrong format write numbers 1-9!" Width="329" Height="42" FontSize="20"/>
+            </Menu>
 
         </Grid>
     </Border>

@@ -20,3 +20,9 @@ C:\Users\Bartek\Desktop\projectSudoku\ProjektC-Sudoku\SudokuLibrary\obj\Debug\Su
 C:\Users\Bartek\Desktop\projectSudoku\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Bartek\Desktop\projectSudoku\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.dll
 C:\Users\Bartek\Desktop\projectSudoku\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.pdb
+C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\SudokuLibrary\bin\Debug\SudokuLibrary.dll
+C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\SudokuLibrary\bin\Debug\SudokuLibrary.pdb
+C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\SudokuLibrary\obj\Debug\SudokuLibrary.csprojAssemblyReference.cache
+C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\SudokuLibrary\obj\Debug\SudokuLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\SudokuLibrary\obj\Debug\SudokuLibrary.dll
+C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\SudokuLibrary\obj\Debug\SudokuLibrary.pdb
