@@ -3,9 +3,15 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SudokuLibrary;
 namespace SudokuEngineTests
 {
+    /// <summary>
+    /// Testy
+    /// </summary>
     [TestClass]
     public class SudokuTests
     {
+        /// <summary>
+        /// Test głównej metody
+        /// </summary>
         [TestMethod]
         public void NewGameTest()
         {

@@ -30,7 +30,9 @@ namespace sudoku
         bool endGame;
         bool isGenerated = true;
         int tick;
-
+        /// <summary>
+        /// Poczatkowa metoda
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -126,8 +128,12 @@ namespace sudoku
 
             isGenerated = true;
         }
-
-        //Metoda ktora sie wykonuje gdy zajdzie zdarzenie
+        /// <summary>
+        /// Metoda ktora sie wykonuje gdy zajdzie zdarzenie
+        /// </summary>
+        /// <param name="o"></param>
+        /// <param name="e"></param>
+       
         public void CheckAfter(object o, RoutedEventArgs e)
         {
 
