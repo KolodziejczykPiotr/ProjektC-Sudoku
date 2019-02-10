@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SudokuLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:SudokuLibrary.SudokuEngine">
+            <summary>
+               Silnik do gry sudoku 
+            </summary>
+        </member>
+        <member name="M:SudokuLibrary.SudokuEngine.NewGame(System.Int32[0:,0:],System.Int32[])">
+            <summary>
+            Tworzy nowa gre ,losując liczby do gry
+            </summary>
+            <param name="Board"></param>
+            <param name="b"></param>
+        </member>
+        <member name="M:SudokuLibrary.SudokuEngine.DrawBoard">
+            <summary>
+            Rysuje plansze w konsoli
+            </summary>
+        </member>
+        <member name="M:SudokuLibrary.SudokuEngine.CheckSmallSquare(System.Int32,System.Int32,System.Int32[0:,0:])">
+            <summary>
+            metoda ktora sprawdza male kwadraty w ciele metody NewGame
+            </summary>
+            <param name="i"></param>
+            <param name="j"></param>
+            <param name="Board"></param>
+        </member>
+        <member name="M:SudokuLibrary.SudokuEngine.Check(System.Int32[])">
+            <summary>
+            Obsluguje sprawdzanie w pionie i poziomie w ciele metody NewGame
+            </summary>
+            <param name="b"></param>
+        </member>
+        <member name="M:SudokuLibrary.SudokuEngine.CheckAfterChangeNumbers(System.Int32[])">
+            <summary>
+            Sprawdza po zmianie numerów w tablicy
+            </summary>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SudokuLibrary.SudokuEngine.CheckSmallSquare(System.String[],System.Windows.Controls.TextBox[0:,0:],System.Int32[])">
+            <summary>
+            Sprawdza male kwadraty po zmianie numerów
+            </summary>
+            <param name="NameArray"></param>
+            <param name="texts"></param>
+            <param name="array"></param>
+        </member>
+        <member name="M:SudokuLibrary.SudokuEngine.CheckVertical(System.String[],System.Windows.Controls.TextBox[0:,0:],System.Int32[])">
+            <summary>
+            Sprawdza w pionie po zmianie numerów
+            </summary>
+            <param name="NameArray"></param>
+            <param name="texts"></param>
+            <param name="array"></param>
+        </member>
+        <member name="M:SudokuLibrary.SudokuEngine.CheckHorizontal(System.String[],System.Windows.Controls.TextBox[0:,0:],System.Int32[])">
+            <summary>
+            Sprzawdza w poziomie po zmianie numerów
+            </summary>
+            <param name="NameArray"></param>
+            <param name="texts"></param>
+            <param name="array"></param>
+        </member>
+    </members>
+</doc>

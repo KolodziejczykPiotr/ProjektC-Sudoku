@@ -82,3 +82,23 @@ C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\sudoku\ob
 C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\sudoku\obj\Debug\sudoku.csproj.CopyComplete
 C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\sudoku\obj\Debug\sudoku.exe
 C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\sudoku\obj\Debug\sudoku.pdb
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\bin\Debug\sudoku.exe.config
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\bin\Debug\sudoku.xml
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\bin\Debug\sudoku.exe
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\bin\Debug\sudoku.pdb
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\bin\Debug\SudokuLibrary.dll
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\bin\Debug\SudokuLibrary.pdb
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\bin\Debug\SudokuLibrary.xml
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csprojAssemblyReference.cache
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\MainWindow.g.cs
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\App.g.cs
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\sudoku_MarkupCompile.cache
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\sudoku_MarkupCompile.lref
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\MainWindow.baml
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.g.resources
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.Properties.Resources.resources
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csproj.GenerateResource.cache
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csproj.CoreCompileInputs.cache
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.csproj.CopyComplete
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.exe
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\sudoku\obj\Debug\sudoku.pdb

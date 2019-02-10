@@ -26,3 +26,10 @@ C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\SudokuLib
 C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\SudokuLibrary\obj\Debug\SudokuLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\SudokuLibrary\obj\Debug\SudokuLibrary.dll
 C:\Users\Piotr\Downloads\ProjektC-Sudoku-master\ProjektC-Sudoku-master\SudokuLibrary\obj\Debug\SudokuLibrary.pdb
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\SudokuLibrary\bin\Debug\SudokuLibrary.xml
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\SudokuLibrary\bin\Debug\SudokuLibrary.dll
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\SudokuLibrary\bin\Debug\SudokuLibrary.pdb
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.csprojAssemblyReference.cache
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.dll
+C:\Users\Damian Kręcisz\Desktop\ProjektC-Sudoku\SudokuLibrary\obj\Debug\SudokuLibrary.pdb
